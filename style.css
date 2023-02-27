@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    background-color: #333;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+background: #e50914; 
+border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: red; 
+}
+/* ::-webkit-scrollbar-thumb:hover + ::-webkit-scrollbar {
+    width: 20px;
+} */
+
+
+#hero {
+    height: 43rem;
+    width: 100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/83e8c151-107d-4e8f-b95a-d2ba99d49bb9/f1ac72e1-5adc-4caf-bceb-e8ec775414ac/IN-en-20230213-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-position: 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -11px 27px 183px 7px rgba(0,0,0,1) inset;
+}
+.nav-bar {
+    width: 95%;
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar img {
+    width: 180px;
+    height: 100px;
+}
+.nav-divs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 250px;
+    border-radius: 5px;
+}
+.language {
+    height: 35px;
+    width: 95px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.719);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.357);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor:pointer;
+}
+.language:hover {
+    border: 2px solid rgba(255, 255, 255, 0.719);
+}
+.language i{
+    font-size: 12px;
+}
+.signin {
+    height: 35px;
+    width: 85px;
+    background-color: #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.signin:hover{
+    background-color: red;
+    border: 1px solid white;
+}
+
+/* hero-content */ 
+.hero-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.594);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-content-text {
+    width: 50%;
+    height: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.email-input {
+    display: flex;
+}
+.hero-input {
+
+    text-align: center;
+}
+.hero-h1 {
+    text-align: center;
+    font-size: 32px;
+    text-shadow: #333;
+    line-height: 1;
+}
+.hero-content-text h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    text-shadow: #333;
+}
+.hero-input h5 {
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 1;
+    text-shadow: #333;
+    line-height: 3;
+}
+.email-input i {
+    font-size: 16px;
+}
+.email-input input {
+    
+    width: 460px;
+    height: 60px;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+}
+.email-input input:focus {
+    outline: 1px solid red;
+}
+.email-input button {
+    height: 60px;
+    width: 190px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    font-size: 24px;
+    word-spacing: 5px;
+}
+.email-input button:hover {
+    background-color: red;
+    border: 1px solid white;
+}
+
+/* columns */
+#columns {
+    height: 121rem;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column-divs {
+    height: 30rem;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-divs-1-content {
+    width: 55%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column-divs-1-content h1,.col-2-content h1,.column-divs-3-content h1,.col-4-content h1 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+.column-divs-1-content h3, .col-2-content h3 ,.column-divs-3-content h3,.col-4-content h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.column-divs-1-img  {
+    width: 45%;
+    height: 100%;
+    
+}
+.col-1-img {
+    position: relative;
+}
+.col-1-video {
+    position: absolute;
+    top: 21%;
+    left: 65px;
+}
+.col-1-i {
+    position: relative;
+    z-index: 1;
+}
+
+/* col-2 */
+
+.col-2-img ,.col-4-img  {
+    width: 45%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+.col-2-img-div {
+    width: 340px;
+    height: 90px;
+    border: 2px solid #333;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    top: -25%;
+    left: 21%;
+
+}
+.col-2-content ,.col-4-content {
+    width: 55%;
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* col-3 */
+.column-divs-3-img,.column-divs-3-content {
+    width: 50%;
+    position: relative;
+}
+.column-divs-3-content {
+    display: flex;
+    justify-content: center;
+}
+.col-3-i {
+    position: relative;
+    left: 20px;
+    width: 550px;
+    z-index: 1;
+}
+.column-divs-3-img video {
+    position: absolute;
+    top: 42px;
+    left: 110px;
+    z-index: 0;
+}
+
+/* faq */
+#faq {
+    height: 55rem;
+    margin-top: 8px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq-div {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq-col {
+    width: 65%;
+    height: 29rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.faq-col-divs {
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: 400;
+}
+.faq-email {
+    width: 80%;
+    text-align: center;
+}
+.faq-email-box {
+    justify-content: center;
+}
+.faq-email-box input {
+    width: 50%;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 25rem;
+    margin-top: 8px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    width: 70%;
+    height: 18rem;
+    color: #7d7b7b;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+}
+.footer-link-div {
+    display: flex;
+
+}
+.footer-link-div div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.footer-hover:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mobile */
+/* not finished!!! */
+
+@media screen and (max-width: 600px) {
+    #hero {
+        height: 30rem;
+        width: 100%;
+    }
+    .nav-bar img {
+        width: 100px;
+        height: 60px;
+    }
+    .language {
+        height: 30px;
+        width: 80px;
+    }
+    .signin {
+        height: 30px;
+        width: 80px;
+        font-weight: 400;
+    
+    }
+    .nav-divs{
+        width: 180px;
+    }
+    .hero-content-text{
+        width: 72%;
+        height: 15rem;
+    }
+    .hero-h1 {
+        text-align: center;
+        font-size: 14px;
+        text-shadow: #333;
+    }
+    .hero-content-text h3 {
+        font-weight: 300;
+        font-size: 18px;
+    }
+    .hero-input {
+        width: 100%;
+    }
+    .hero-input h5 {
+        font-size: 16px;
+        font-weight: 500;
+        text-shadow: #333;
+    }
+    .email-input {
+        width: 200px;
+    }
+    .submit {
+        width: 50px;
+        font-size: 1px;
+    }
+}
